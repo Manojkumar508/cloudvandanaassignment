@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./calcistyle.css" >
+   
+</head>
+<body >
+    <div id="container">
+
+    <form name="calc" >
+        <input id="display" name="Answers" readonly>
+        <br><br>
+        <input type="button" class="buttons" value="1" onclick="calc.Answers.value+='1'" >
+        <input type="button" class="buttons" value="2" onclick="calc.Answers.value+='2'" >
+        <input type="button" class="buttons" value="3" onclick="calc.Answers.value+='3'" > 
+        <input type="button" class="buttons" value="+" onclick="calc.Answers.value+='+'" >
+
+        <br><br>
+        <input type="button" class="buttons" value="5" onclick="calc.Answers.value+='4'" >
+        <input type="button" class="buttons" value="6" onclick="calc.Answers.value+='5'" >
+        <input type="button" class="buttons" value="7" onclick="calc.Answers.value+='6'" >
+        <input type="button" class="buttons" value="-" onclick="calc.Answers.value+='-'" >
+
+        <br><br>
+
+        <input type="button" class="buttons" value="7" onclick="calc.Answers.value+='7'" >
+        <input type="button" class="buttons" value="8" onclick="calc.Answers.value+='8'" >
+        <input type="button" class="buttons" value="9" onclick="calc.Answers.value+='9'" >
+        <input type="button" class="buttons" value="*" onclick="calc.Answers.value+='*'" >
+        <br><br>
+
+        <input type="button"  class="buttons" value="0" onclick="calc.Answers.value+='0'" >
+        <input type="button"  class="buttons" value="%" onclick="calc.Answers.value+='%'" >
+        <input type="button"  class="buttons" value="." onclick="calc.Answers.value+='.'" >
+        <input type="button"  class="buttons" value="/" onclick="calc.Answers.value+='/'" >
+        <br><br>
+
+        <input type="button" id="clearButton" value="clear" onclick="calc.Answers.value=' '" >
+        <input type="button" id="equalButton" value="=" onclick="calc.Answers.value=eval(calc.Answers.value)">
+    </form>
+</div>
+    
+</body>
+</html>
